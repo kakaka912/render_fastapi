@@ -1,16 +1,26 @@
+from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
-### コードいろいろ... ###
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
 
 @app.get("/index")
 def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <meta charset="UTF-8">
+            <title>マスターのホームページ</title>
         </head>
-        <body>
-            <h1>Look ma! HTML!</h1>
+        <body style="background-color:#eef; text-align:center; padding-top:50px; font-family:sans-serif;">
+            <h1 style="color:#333;">ようこそ！ここは24FI094の FastAPI ホームページ</h1>
+            <p>これは課題 9-1 の Web ページです。</p>
+            <p>HTML は自由に編集できます。</p>
+            <hr style="margin:40px;">
+            <p style="color:#666;">Powered by FastAPI × Render</p>
         </body>
     </html>
     """
