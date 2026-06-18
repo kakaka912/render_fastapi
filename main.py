@@ -13,12 +13,17 @@ def index():
     <html>
         <head>
             <meta charset="UTF-8">
-            <title>マスターのホームページ</title>
+            <title>間違い探し</title>
         </head>
         <body style="background-color:#eef; text-align:center; padding-top:50px; font-family:sans-serif;">
-            <h1 style="color:#333;">ようこそ！ここは24FI094の FastAPI ホームページ</h1>
-            <p>これは課題 9-1 の Web ページです。</p>
-            <p>HTML は自由に編集できます。</p>
+            <h1 style="color:#333;">間違い探しを始めるよ</h1>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束東束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
+            <p>束束束束束束束束束束束束束束束束束束束束束束束束束束束束束束</p>
             <hr style="margin:40px;">
             <p style="color:#666;">Powered by FastAPI × Render</p>
         </body>
