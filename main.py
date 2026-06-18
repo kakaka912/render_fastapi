@@ -41,11 +41,6 @@ def index():
     """
     return HTMLResponse(content=html_content, status_code=200)
 
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
-
-app = FastAPI()
-
 @app.post("/present")
 async def give_present(present: str):
     return {
