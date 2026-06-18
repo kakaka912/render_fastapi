@@ -1,3 +1,12 @@
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
+
 @app.get("/index")
 def index():
     html_content = """
@@ -18,11 +27,13 @@ def index():
             <p>束 束 束 束 束 束 束 束 束 束 束 束 束 束 束 束</p>
             <p>束 束 束 束 束 束 束 束 束 束 束 束 束 束 束 束</p>
             <p>束 束 束 束 束 束 束 束 束 束 束 束 束 束 束 束</p>
+
             <p>
                 束 束 束 束 束 束 束 束 束 束 束 束 束 
                 <span style="cursor: pointer;" onclick="correct()">東</span>
                 束 束 束
             </p>
+
             <p>束 束 束 束 束 束 束 束 束 束 束 束 束 束 束 束</p>
             <p>束 束 束 束 束 束 束 束 束 束 束 束 束 束 束 束</p>
 
